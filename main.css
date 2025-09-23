@@ -1,0 +1,30 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* fr é a unidade de fração*/
+    grid-template-areas: 
+    "a a d"
+    "b c d";
+    grid-template-rows: 25rem 25rem;
+    /*a quantidade de valores equivale a quantidade de linhas no 
+    'grid-template-areas' */
+    gap: 1rem;
+}
+section{
+    border: 1px solid black;
+    padding: 1rem;
+    /* grid-template-areas = desenha a matriz*/
+    overflow: auto;
+}
+section.noticias{
+    grid-area: a;
+}
+section.comemoracao{
+    grid-area: b;
+}
+section.organizadores{
+    grid-area: c;
+}
+section.corrida{
+    grid-area: d;
+}

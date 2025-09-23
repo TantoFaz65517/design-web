@@ -1,0 +1,34 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* fr é a unidade de fração*/
+    grid-template-areas: 
+    "a b c"
+    "a b d"
+    "e e e";
+    grid-template-rows: 25rem 25rem;
+    /*a quantidade de valores equivale a quantidade de linhas no 
+    'grid-template-areas' */
+    gap: 1rem;
+}
+section{
+    border: 1px solid black;
+    padding: 1rem;
+    /* grid-template-areas = desenha a matriz*/
+    overflow: auto;
+}
+section.a{
+    grid-area: a;
+}
+section.b{
+    grid-area: b;
+}
+section.c{
+    grid-area: c;
+}
+section.d{
+    grid-area: d;
+}
+section.e{
+    grid-area: e;
+}
