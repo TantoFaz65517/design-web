@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    list-style-type: none;
+}
+ol > li{
+    display: inline;
+    position: relative;
+}
+ol li > a{
+    display: inline-block;
+    background-color: darkcyan;
+    text-decoration: none;
+    padding: 1 rem;
+    vertical-align: middle;
+    height: 3rem;
+}
+li > ul{
+    position: absolute;
+    padding: 1rem;
+    background-color: darkturquoise;
+    top: 20px;
+    left: 0;
+    /* por padrao as coordenadas são em relação ao body, porém se o elemento pai tiver o position relative, o elemento ficará em relação ao pai*/
+    visibility: hidden;
+
+}
+li:hover ul{
+    /*ao passar o mouse no li, ul se tornará visivel */
+    visibility: visible;
+}
