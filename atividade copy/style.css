@@ -1,0 +1,165 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", monospace;
+}
+
+body {
+  background-color: #f3f3f3;
+  color: #000;
+}
+
+/* ====== CABEÇALHO ====== */
+header {
+  background: linear-gradient(to right, #2f4f60, #6d8b9b);
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 14px;
+}
+
+/* ====== CONTAINER PRINCIPAL ====== */
+main {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 80vh;
+}
+
+/* ====== MENU LATERAL ====== */
+nav {
+  background-color: #b9cbd5;
+  padding: 40px 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #32627a;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ====== CONTEÚDO ====== */
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+/* ====== CAIXAS ====== */
+.box {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* ====== TÍTULOS ====== */
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ====== PROGRAMAÇÃO ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+
+/* ====== FORMULÁRIO ====== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  padding: 8px;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+button, input[type="submit"] {
+  background-color: #2f4f60;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 120px;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #1d3745;
+}
+
+/* ====== IMAGENS DE PALESTRANTES ====== */
+.speaker {
+  position: relative;
+}
+
+.speaker img {
+  width: 100%;
+  border-radius: 2px;
+  filter: grayscale(100%);
+}
+
+.speaker span {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3px 6px;
+  border-radius: 2px;
+}
+
+/* ====== RODAPÉ ====== */
+footer {
+  background-color: #2f4f60;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+}
